@@ -14,7 +14,7 @@ export default function AppRouterDom(){
   <h5>03 React Router Dom</h5>
    <Router> 
       <CurrentPath />
-      <div class="flex aspect-video max-w-[450px] bgShadow rounded-[8px] overflow-hidden">
+      <div className="flex aspect-video max-w-[450px] bgShadow rounded-[8px] overflow-hidden">
             <Navbar />
               <Routes>
                <Route path="/" element={<Home />} />

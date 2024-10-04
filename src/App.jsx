@@ -6,6 +6,8 @@ import AppRouterDom from './components/ReactRouterDom/AppRouterDom.jsx'
 import UserContextProvider from './components/Context/UserContextProvider.jsx'
 import Login from './components/Context/Login.jsx'
 import Profile from './components/Context/Profile.jsx'
+import {ThemeProvider} from './components/Theme/ThemeContext.jsx'
+import ThemeCard from './components/Theme/ThemeCard.jsx'
 
 export default function App() {
   const [data, setData] = useState([])
@@ -37,5 +39,9 @@ export default function App() {
       <Login />
       <Profile />
     </UserContextProvider>
+    
+    <ThemeProvider>
+      <ThemeCard />
+    </ThemeProvider>
   </> 
 )}

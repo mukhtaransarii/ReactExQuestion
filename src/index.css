@@ -73,3 +73,13 @@ h5{
   box-shadow: 3px 3px 10px 3px #0000002c;
 }
 
+/* for theme context components */
+.lightMode {
+  background-color: #fff;
+  color: #000;
+}
+
+.darkMode{
+  background-color: #222;
+  color: #fff;
+}
