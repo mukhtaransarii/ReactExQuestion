@@ -31,16 +31,16 @@ function Profile() {
   if (user) 
   return (
      <div className="bg-[#fff] p-5 flex flex-col gap-5">
-      <div className=" bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+      <div className="card max-w-[450px]">
       
-        <h2 className="text-2xl font-bold text-gray-800 mb-2">
+        <h2 className="text-lg font-bold text-gray-800 mb-2">
           {user.username}
         </h2>
         
         {/* Profile Picture Placeholder | Posts, Followers, Following */}
-        <div className="flex justify-between gap-10">
-          <div className="w-24 h-24 bg-gray-300 rounded-full mb-6"></div>
-          <div className="flex flex-1 justify-between items-center text-center text-gray-800 font-semibold mb-6">
+        <div className="flex justify-between gap-10 ">
+          <img className="w-20 h-20 bg-gray-300 rounded-full mb-1" src="https://imgcdn.stablediffusionweb.com/2024/2/24/31aad3d9-a853-4296-88d7-58b3104a0527.jpg" />
+          <div className="flex flex-1 justify-between items-center text-center text-gray-800 font-semibold ">
              <div>
                <p className="text-[16px]">{randomPosts}</p>
                <p className="text-[11px] text-gray-500">Posts</p>
@@ -56,13 +56,13 @@ function Profile() {
           </div>
         </div>
         
-        <p className="font-semibold">{nameCapitalised(user.username)}</p>
+        <p className="font-semibold text-sm">{nameCapitalised(user.username)}</p>
         {/* Random Bio */}
-        <p className="text-gray-600 mb-4">{randomBio}</p>
+        <p className="text-gray-600 mb-2 text-sm">{randomBio}</p>
 
         {/* Edit Profile Button */}
         <button
-          className="mt-4 bg-blue-500 text-white p-2 rounded-lg w-full font-semibold hover:bg-blue-600 transition-colors duration-300">
+          className="bg-blue-500 text-white p-2 rounded-lg w-full font-semibold hover:bg-blue-600 transition-colors duration-300">
           Edit Profile
         </button>
       </div>

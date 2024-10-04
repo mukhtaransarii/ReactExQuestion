@@ -74,12 +74,12 @@ h5{
 }
 
 /* for theme context components */
-.lightMode {
+.light {
   background-color: #fff;
   color: #000;
 }
 
-.darkMode{
+.dark {
   background-color: #222;
   color: #fff;
 }
