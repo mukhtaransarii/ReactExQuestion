@@ -6,6 +6,7 @@ const ThemeCard = () => {
   return (
     <div className="p-5"> 
       <div className={`card max-w-[450px]  overflow-hidden ${theme === 'light'? 'light': 'dark'}`}>
+        <p className="text-zinc-400 text-[8px] mb-2">Theme Toggle</p>
         {/* Image */}
         <img
           src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"

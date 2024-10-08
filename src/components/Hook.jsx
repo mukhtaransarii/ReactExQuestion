@@ -52,7 +52,7 @@ export default function Hook() {
 
   return (
   <div className="bg-[#CDEA68] p-5 flex flex-col gap-5">
-    <h5>01 Hook Method</h5>
+    <h5>01 useState && useEffect Method</h5>
       <div className="card">
         <p className="text-zinc-400 text-[8px] mb-2">Counter</p>
         <button onClick={() => setCounter(counter + 1)}>Increase: {counter}</button>
