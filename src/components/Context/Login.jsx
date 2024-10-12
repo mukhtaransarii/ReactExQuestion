@@ -6,11 +6,17 @@ function Login(){
    const [password, setPassword] = useState("")
    const {setUser} = useContext(UserContext)
    const {user} = useContext(UserContext)
+   const [loginStatus, setLoginStatus] = useState("Please login to access your Profile")
    
     const handleSubmit = (e) => {
-      e.preventDefault()
-      setUser({username, password})
-    }
+      if (username && password) {
+      e.preventDefault();
+      setUser({ username, password });
+     }else{
+      setLoginStatus("Please Enter your Username and Password")
+     }
+    };
+
   return (
  <div className="bg-[#fff] p-5 flex flex-col gap-5">
   <h5>04 useContext Passing Golbal props</h5>
@@ -42,11 +48,13 @@ function Login(){
     >
       Submit
     </button>
+  
     {!user && (
           <p className="mt-4 text-center text-zinc-400 text-xs">
-            Please login to access your Profile.jsx
+            {loginStatus}
           </p>
     )}
+  
   </div>
   </div>
   )

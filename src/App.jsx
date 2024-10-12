@@ -22,7 +22,7 @@ export default function App() {
   }, [])
   
   return(
-  <>
+  <div>
     <Home />
     <Hook />
    
@@ -51,5 +51,5 @@ export default function App() {
     <Provider store={store}>
       <AppRedux />
     </Provider>
-  </> 
+  </div> 
 )}
